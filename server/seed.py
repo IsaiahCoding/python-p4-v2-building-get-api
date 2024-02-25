@@ -39,6 +39,11 @@ with app.app_context():
         genre='Party',
         platform="PlayStation",
         price=7))
+    games.append(Game(
+        title='God of War',
+        genre='RPG',
+        platform="PlayStation",
+        price=60))
     db.session.add_all(games)
 
     reviews = []
